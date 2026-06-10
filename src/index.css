@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4d0216;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #6b1a2a;
+  --color-secondary: #83550e;
+  --color-background: #fff8f5;
+  --color-surface: #fff8f5;
+  --color-surface-dim: #ebd6c7;
+  --color-surface-container: #ffeadb;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #241910;
+  --color-on-surface-variant: #554243;
+  --color-outline: #887273;
+  --color-inverse-surface: #3a2e24;
+  --color-outline-variant: #dbc0c2;
+  --color-secondary-fixed-dim: #f9bb6d;
+
+  --font-sans: "DM Sans", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-cinzel: "Cinzel", serif;
+}
+
+/* Custom visual utilities supporting modern heritage theme */
+.rose-gold-border {
+  border: 1px solid #B8823A;
+}
+
+.rose-gold-text {
+  color: #B8823A;
+}
+
+.plinth-shadow {
+  box-shadow: 0 20px 40px rgba(131, 85, 14, 0.05);
+}
+
+.cal-day {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cal-day:hover {
+  background-color: rgba(184, 130, 58, 0.05);
+}
+
+/* Custom Scroll Smoothness styling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animate Counter and Reveals */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
